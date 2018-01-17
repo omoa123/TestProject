@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace TestConsoleApp
 {
     class Program
     {
         static void Main(string[] args)
         {
+            var store = new Store();
+            var storeList = Store.QueryStoreList("826", "01");
         }
+
+       
     }
 }
