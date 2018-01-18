@@ -13,6 +13,14 @@ namespace TestWebApplication
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            // http://網址/temp_label/upload_labeltxt.asp 轉換到 ==>首頁
+            //web config 需添加< !--< modules runAllManagedModulesForAllRequests = "true" > -->
+            //routes.MapRoute(
+            //  name: "Test1",
+            //  url: "temp_label/upload_labeltxt.asp",
+            //  defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            //);
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
